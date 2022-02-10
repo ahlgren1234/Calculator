@@ -58,6 +58,10 @@ struct ContentView: View {
                                 .foregroundColor(buttonColor(cell))
                                 .font(.system(size: 40, weight: .heavy))
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .stroke(Color.gray, lineWidth: 1)
+                                )
                         }
 
                     }
